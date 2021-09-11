@@ -1,4 +1,4 @@
-# aot-compiler
+# aot-binary
 
 Оптимизированный для быстрого поиска бинарный формат [файлов словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian) из проекта aot.
 
