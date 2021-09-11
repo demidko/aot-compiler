@@ -36,6 +36,17 @@
 хеш, индекс леммы, индекс леммы, индекс леммы
 ```
 
+## Проверка данных
+Для проверки результатов, выводится статистика.  
+Эталонные результаты компиляции должны быть такие:
+```
+Compilation [1..4]
+1. Morphology (579)
+2. Strings (3039129)
+3. Lemma indexes (174628)
+4. Flexion hashes (3034914)
+```
+
 ## Build with Java
 
 Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-all.jar` postfix.
