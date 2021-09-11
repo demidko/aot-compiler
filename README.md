@@ -3,6 +3,8 @@
 Kotlin microservice template produces self-executable jar application. For brevity, double-space
 formatting is used. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
 
+https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt
+
 ## Usage
 
 1. Make sure you are signed in to your GitHub account, then just
