@@ -4,7 +4,7 @@
 
 ## Оригинальный текстовый формат
 
-За основу для оптимизации был взят проект [aot](https://github.com/sokirko74/aot). На вход нашему компилятору подаются [оригинальные aot-словари](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian) морфологии русского языка, которые хорошо хорошо задокументированы [здесь](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
+За основу для оптимизации был взят [проект aot](https://github.com/sokirko74/aot). На вход нашему компилятору подаются оригинальные [aot-словари морфологии русского языка](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian). Они хорошо задокументированы [здесь](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
 
 ## Оптимизированный бинарный формат
 
