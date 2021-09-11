@@ -39,14 +39,14 @@ Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with
 Now you can run:
 
 ```shell
-java -jar service-all.jar
+java -jar aot-compiler-all.jar
 ```
 
 ## Or, build with Docker
 
-Execute `docker build . -t service`. Your image will be located at `docker images -a`. Now you can
+Execute `docker build . -t aot-compiler`. Your image will be located at `docker images -a`. Now you can
 run:
 
 ```shell
-docker run -it --rm service
+docker run -it --rm aot-compiler
 ```
