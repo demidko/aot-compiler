@@ -1,9 +1,0 @@
-spec:
-  name: service
-  services:
-    - name: backend
-      dockerfile_path: Dockerfile
-      github:
-        repo: demidko/service
-        branch: main
-        deploy_on_push: true
