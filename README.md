@@ -1,8 +1,12 @@
 # aot-compiler
 
-Оптимизированный для быстрого поиска бинарный формат [aot-словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian) (который задокументирован [в оригинальном репозитории](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt)).
+Оптимизированный для быстрого поиска бинарный формат [aot-словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian).
 
-## Формат бинарного файла
+## Исходный текстовый формат
+
+Документация расположена в оригинальном репозитории: https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt
+
+## Оптимизированный бинарный формат
 
 ```
 количество морфологий
