@@ -1,10 +1,6 @@
 # aot-compiler
 
-Компилятор aot-словаря русской морфологии в собственный бинарный формат, оптимизированный загрузки в память и быстрого поиска.  
-
-## Оригинальный текстовый формат
-
-За основу для оптимизации был взят [проект aot](https://github.com/sokirko74/aot). На вход нашему компилятору подаются оригинальные [aot-словари морфологии русского языка](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian). Они хорошо задокументированы [здесь](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
+Компилятор предназначен для [словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian)((документация)[https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt)]) из [проекта aot](https://github.com/sokirko74/aot) в собственный бинарный формат, оптимизированный загрузки в память и быстрого поиска.
 
 ## Оптимизированный бинарный формат
 
