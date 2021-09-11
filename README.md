@@ -4,7 +4,7 @@
 
 ## Исходный текстовый формат
 
-Документация расположена в [оригинальном репозитории aot](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt)
+Документация расположена в [оригинальном репозитории aot](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
 
 ## Оптимизированный бинарный формат
 
