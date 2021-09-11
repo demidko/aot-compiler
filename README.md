@@ -1,15 +1,37 @@
-# Service
+# aot-compiler
 
-Kotlin microservice template produces self-executable jar application. For brevity, double-space
-formatting is used. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
+Компилятор aot-словаря русской морфологии в собственный бинарный формат, оптимизированный для быстрой загрузки в память и чтения.  
 
-https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt
+## Оригинальный текстовый формат
 
-## Usage
+За основу для оптимизации был взят проект [aot](https://github.com/sokirko74/aot). На вход нашему компилятору подаются [оригинальные aot-словари](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian) морфологии русского языка, которые хорошо хорошо задокументированы [здесь](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
 
-1. Make sure you are signed in to your GitHub account, then just
-   click [`here`](https://github.com/demidko/service/generate) to use template.
-2. `App.kt` file is entry point.
+## Оптимизированный бинарный формат
+
+```
+количество морфологий
+морфология
+...
+морфология 
+
+количество строк
+строка
+...
+строка
+
+количество лемм
+(индекс строки, индекс морфологии) (индекс строки, индекс морфологии)... (индекс строки, индекс морфологии) (индекс строки, индекс морфологии)
+(индекс строки, индекс морфологии) (индекс строки, индекс морфологии)... (индекс строки, индекс морфологии) (индекс строки, индекс морфологии)
+...
+(индекс строки, индекс морфологии) (индекс строки, индекс морфологии)... (индекс строки, индекс морфологии) (индекс строки, индекс морфологии)
+
+количество хешей (коллизии проверяются в рантайме, нет смысла отделяеть их во время компиляции, т. к. могут быть и внешние коллизии)
+хеш, индекс леммы, индекс леммы
+хеш, индекс леммы, индекс леммы, индекс леммы
+хеш, индекс леммы, индекс леммы, индекс леммы, индекс леммы
+...
+хеш, индекс леммы, индекс леммы, индекс леммы
+```
 
 ## Build with Java
 
@@ -28,7 +50,3 @@ run:
 ```shell
 docker run -it --rm service
 ```
-
-## Deploy
-
-[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/YOUR/REPO/tree/main)
