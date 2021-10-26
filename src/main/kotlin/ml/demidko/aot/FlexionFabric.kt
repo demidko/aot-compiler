@@ -1,5 +1,6 @@
 package ml.demidko.aot
 
+import com.github.demidko.aot.bytecode.MorphologyTag
 import java.util.*
 
 

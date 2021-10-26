@@ -1,5 +1,8 @@
 package ml.demidko.aot
 
+import com.github.demidko.aot.bytecode.Bytecode.endOfCompiledLine
+import com.github.demidko.aot.bytecode.MorphologyTag
+import com.github.demidko.aot.bytecode.Utils.safeCharToByte
 import ml.demidko.aot.Hashes.calculate
 import ml.demidko.aot.LemmasReader.readLemmas
 import ml.demidko.aot.Zip.zip
@@ -8,6 +11,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.UncheckedIOException
 import java.util.*
+import java.util.zip.GZIPOutputStream
 
 object Compiler {
 
@@ -17,7 +21,7 @@ object Compiler {
     println("Reading...")
     val zippedLemmas = zip(readLemmas())
     println("Compilation [1..4]")
-    DataOutputStream(FileOutputStream("mrd.bin")).use { file ->
+    DataOutputStream(GZIPOutputStream(FileOutputStream("mrd.gz"))).use { file ->
       println("1. Morphology (" + zippedLemmas.morph.size + ")")
       compileMorphology(file, zippedLemmas.morph)
       println("2. Strings (" + zippedLemmas.strings.size + ")")
@@ -28,7 +32,7 @@ object Compiler {
       println("4. Flexion hashes (" + hashes.size + ")")
       compileHashes(file, hashes)
     }
-    println("Mrd-file successfully compiled to mrd.bin")
+    println("Mrd-file successfully compiled to mrd.gz")
   }
 
   // 1
@@ -48,8 +52,8 @@ object Compiler {
 
   @Throws(UncheckedIOException::class)
   private fun bytesFromMorphology(line: Set<MorphologyTag>): ByteArray {
-    if (MorphologyTag.values().size >= Bytecode.endOfCompiledLine) {
-      throw UncheckedIOException(IOException("GrammarInfo.values() >= " + Bytecode.endOfCompiledLine))
+    if (MorphologyTag.values().size >= endOfCompiledLine) {
+      throw UncheckedIOException(IOException("GrammarInfo.values() >= " + endOfCompiledLine))
     }
     val res = ByteArray(line.size + 1)
     var resIndex = -1
@@ -61,7 +65,7 @@ object Compiler {
   }
 
   private fun byteFromChar(n: Char): Byte {
-    return if (n == '\n') Bytecode.endOfCompiledLine else Utils.safeCharToByte(n)
+    return if (n == '\n') endOfCompiledLine else safeCharToByte(n)
   }
 
   // 2

@@ -1,15 +1,14 @@
-# aot-binary
+# Aot Compiler
 
-Оптимизированный для быстрого поиска бинарный
-формат [файлов словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian)
-из проекта aot.
+Компилятор [файлов aot-словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian)
+в оптимизированный для быстрого поиска бинарный формат.
 
 ## Исходный текстовый формат
 
 Документация расположена
 в [оригинальном репозитории aot](https://github.com/sokirko74/aot/blob/master/Docs/Morph_UNIX.txt).
 
-## Оптимизированный бинарный формат (`mrd.bin`)
+## Оптимизированный бинарный формат (`mrd.gz`)
 
 ```
 количество морфологий

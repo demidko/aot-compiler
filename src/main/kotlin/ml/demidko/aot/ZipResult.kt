@@ -1,5 +1,7 @@
 package ml.demidko.aot
 
+import com.github.demidko.aot.bytecode.MorphologyTag
+
 /**
  * Результат сжатия набора лемм
  */
