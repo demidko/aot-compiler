@@ -1,6 +1,6 @@
 # Aot Compiler
 
-Компилятор [файлов aot-словаря русской морфологии](https://github.com/sokirko74/aot/tree/master/Dicts/Morph/Russian)
+Компилятор [файлов aot-словаря](https://github.com/sokirko74/morph_dict/) [русской морфологии](https://github.com/sokirko74/morph_dict/tree/master/data/Russian)
 в оптимизированный для быстрого поиска бинарный формат.
 
 ## Исходный текстовый формат
@@ -50,8 +50,8 @@ Compilation [1..4]
 
 ## Build with Java
 
-Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-all.jar` postfix.
-Now you can compile morphology:
+Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-all.jar` postfix. Now you can compile
+morphology:
 
 ```shell
 java -jar aot-binary-all.jar
@@ -59,8 +59,8 @@ java -jar aot-binary-all.jar
 
 ## Or, build with Docker
 
-Execute `docker build . -t aot-binary`. Your image will be located at `docker images -a`. Now you
-can compile morphology:
+Execute `docker build . -t aot-binary`. Your image will be located at `docker images -a`. Now you can compile
+morphology:
 
 ```shell
 docker run -v `pwd`:`pwd` -w `pwd` -it --rm aot-binary
