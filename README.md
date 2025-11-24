@@ -35,6 +35,12 @@
 хеш, индекс леммы, индекс леммы, индекс леммы
 ```
 
+## Компиляция mrd.gz
+
+```shell
+make
+```
+
 ## Проверка данных
 
 Для проверки результатов выводится статистика.  
@@ -46,22 +52,4 @@ Compilation [1..4]
 2. Strings (3039129)
 3. Lemma indexes (174628)
 4. Flexion hashes (3034914)
-```
-
-## Build with Java
-
-Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-all.jar` postfix. Now you can compile
-morphology:
-
-```shell
-java -jar aot-binary-all.jar
-```
-
-## Or, build with Docker
-
-Execute `docker build . -t aot-binary`. Your image will be located at `docker images -a`. Now you can compile
-morphology:
-
-```shell
-docker run -v `pwd`:`pwd` -w `pwd` -it --rm aot-binary
 ```
