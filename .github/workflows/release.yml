@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew build
 
       - name: Compile mrd.gz
-        run: java -jar build/libs/*-all.jar
+        run: java -jar build/libs/*-all.jar 2>&1 | tee release_notes.txt
 
       - name: Publish mrd.gz as GitHub release
         if: github.ref == 'refs/heads/main'
@@ -36,4 +36,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="$(date +'%Y-%m-%d-%H%M')"
-          gh release create "$TAG" mrd.gz --title "$TAG" --generate-notes
+          gh release create "$TAG" mrd.gz --title "$TAG" --notes-file release_notes.txt
