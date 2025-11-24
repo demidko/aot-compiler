@@ -28,7 +28,11 @@ jobs:
         run: ./gradlew build
 
       - name: Compile mrd.gz
-        run: java -jar build/libs/*-all.jar 2>&1 | tee release_notes.txt
+        run: |
+          set -o pipefail
+          echo '```text' > release_notes.md
+          java -jar build/libs/*-all.jar 2>&1 | tee -a release_notes.md
+          echo '```' >> release_notes.md
 
       - name: Publish mrd.gz as GitHub release
         if: github.ref == 'refs/heads/main'
