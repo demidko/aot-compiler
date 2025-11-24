@@ -48,7 +48,7 @@ make
 
 ```
 Compilation [1..4]
-1. Morphology (579)
+1. Morphology (2970)
 2. Strings (3039129)
 3. Lemma indexes (174628)
 4. Flexion hashes (3034914)
