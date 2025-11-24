@@ -35,5 +35,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG=$(date +'%Y.%m.%d.%H.%M.%S')
-          gh release create "$TAG" mrd.gz --title "Build $TAG" --generate-notes
+          TAG="v$(date +'%Y-%m-%d-%H%M')"
+          gh release create "$TAG" mrd.gz --title "$TAG" --generate-notes
