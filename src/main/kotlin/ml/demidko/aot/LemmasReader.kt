@@ -87,7 +87,7 @@ internal object LemmasReader {
           continue
         }
         val tokens = line.split(" ").toTypedArray()
-        result.add(FlexionFabric.createLemma(tokens[0], paradigms[tokens[1].toInt()], morphMap))
+        result.add(FlexionFabric.createLemma(tokens[0], paradigms[tokens[1].toInt()], tokens[4], morphMap))
       }
     }
     return result
