@@ -1,17 +1,13 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
-
-name: Java CI with Gradle
+name: Publish mrd.gz
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -31,14 +27,16 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582
 
-      - name: Build jar
+      - name: Build compiler
         run: ./gradlew build
 
-      - name: Build mrd.gz
+      - name: Compile mrd.gz
         run: java -jar build/libs/*-all.jar
 
-      - name: Upload mrd.gz
-        uses: actions/upload-artifact@v4
-        with:
-          path: mrd.gz
-          if-no-files-found: error # Упасть с ошибкой, если файл не создался
+      - name: Publish mrd.gz
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(date +'%Y.%m.%d.%H.%M.%S')
+          gh release create "$TAG" mrd.gz --title "Build $TAG" --generate-notes
