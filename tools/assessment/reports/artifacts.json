@@ -1,0 +1,22 @@
+{
+  "old": {
+    "bytes": 43486527,
+    "sha256": "7bc652a568090d6f07e9d53213329769e4d1597a5688d9c77e422b63b5c5fc41"
+  },
+  "old-rebuilt": {
+    "bytes": 43486527,
+    "sha256": "7bc652a568090d6f07e9d53213329769e4d1597a5688d9c77e422b63b5c5fc41"
+  },
+  "new": {
+    "bytes": 58229146,
+    "sha256": "2bacc862918479258c378c72dc320c8ae1f4cd786954b3d59b46b7b739634f08"
+  },
+  "retain-legacy": {
+    "bytes": 59075746,
+    "sha256": "0984a7049660ddb42531440ca412cad2e79e065d854b22f5e0216f8f5ab109a0"
+  },
+  "tombstone": {
+    "bytes": 57721815,
+    "sha256": "148d5635ee294dd5c3275d65f316a4ac3612547d7396154ddf81ec7cd262a553"
+  }
+}

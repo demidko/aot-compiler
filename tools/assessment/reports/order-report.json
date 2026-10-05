@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "same_analysis_multiset": 2970680,
+    "same_result_sequence": 2938452,
+    "changed_analysis_multiset": 64208,
+    "changed_result_sequence": 32228
+  }
+}

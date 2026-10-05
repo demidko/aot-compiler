@@ -1,0 +1,64 @@
+{
+  "prefix_policy": "legacy-ignore",
+  "old": {
+    "lemmas": 174628,
+    "forms": 5017012
+  },
+  "new_source_lemmas": 298510,
+  "prefix_sets_not_expanded": 60,
+  "meta_entries_filtered": 157,
+  "new": {
+    "lemmas": 298353,
+    "forms": 7036268
+  },
+  "forms": {
+    "shared_forms": 3034888,
+    "lost_analyses_on_shared_forms": 55171,
+    "added_analyses_on_shared_forms": 96684,
+    "same_ordered_tag_analysis_multisets": 2970680,
+    "changed_semantic_analysis_multisets": 64208,
+    "added_forms": 1051564,
+    "lost_forms": 4241
+  },
+  "positional_ids": {
+    "shared_numeric_ids": 2574736,
+    "same_surface_lemma_tag_set": 36,
+    "same_surface_lemma_ordered_tags": 36,
+    "reused_with_different_analysis": 2574700
+  },
+  "lemma_mapping": {
+    "same_positional_semantic_paradigm": 3,
+    "old_paradigms_with_any_exact_semantic_match": 160869,
+    "old_paradigms_with_unique_new_match": 160790,
+    "old_paradigms_with_multiple_new_matches": 79,
+    "bijective_exact_paradigm_matches": 160790
+  },
+  "lookup_order": "Not yet compared: lemma-order traversal is not the binary hash-reference order. No order-equivalence claim.",
+  "elapsed_seconds": 127.8061231419997,
+  "inputs": {
+    "binary": {
+      "path": "mrd.gz",
+      "sha256": "7bc652a568090d6f07e9d53213329769e4d1597a5688d9c77e422b63b5c5fc41"
+    },
+    "queries": {
+      "path": "issue6-queries.txt",
+      "sha256": "00ef9d435bb63eaf8c392f0c5c14d1da4a6b66bd99c1e2b4e17c476fbaf2eb09"
+    },
+    "morph": {
+      "path": "morphs.json",
+      "sha256": "d3255180e4f32ff533e2ccadc71346bc66b78cb00f8e4b76d815fff1b979adb6"
+    },
+    "gram": {
+      "path": "gramtab.json",
+      "sha256": "dbf396d5c45cf34ae898c1686089271d357a311da0d05db7fbdfdbba136d1f5e"
+    }
+  },
+  "issue6": {
+    "extraction": "298 nonempty Cyrillic-only lines after trimming surrounding whitespace from issue body; coverage is presence, not linguistic correctness",
+    "total": 298,
+    "known_old": 4,
+    "known_new": 288,
+    "gained": 284,
+    "lost": 0
+  }
+}

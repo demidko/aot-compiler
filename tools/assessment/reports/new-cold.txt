@@ -1,0 +1,10 @@
+first_lookup_ms=1538.886 allocated=858165672 retained=465016136 sum_pool_peaks=628672096 count=5 class=file:/workspace/morph-assessment-data/aot-new-dictionary.jar resource=jar:file:/workspace/morph-assessment-data/aot-new-dictionary.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=736400
+first_lookup_ms=1514.872 allocated=858165672 retained=464957472 sum_pool_peaks=622904928 count=5 class=file:/workspace/morph-assessment-data/aot-new-dictionary.jar resource=jar:file:/workspace/morph-assessment-data/aot-new-dictionary.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=732056
+first_lookup_ms=1488.766 allocated=858165672 retained=464919968 sum_pool_peaks=625002080 count=5 class=file:/workspace/morph-assessment-data/aot-new-dictionary.jar resource=jar:file:/workspace/morph-assessment-data/aot-new-dictionary.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=733080
+first_lookup_ms=1495.998 allocated=858165672 retained=464916432 sum_pool_peaks=624477792 count=5 class=file:/workspace/morph-assessment-data/aot-new-dictionary.jar resource=jar:file:/workspace/morph-assessment-data/aot-new-dictionary.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=732032
+first_lookup_ms=1539.222 allocated=858165672 retained=464938384 sum_pool_peaks=626050656 count=5 class=file:/workspace/morph-assessment-data/aot-new-dictionary.jar resource=jar:file:/workspace/morph-assessment-data/aot-new-dictionary.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=734944

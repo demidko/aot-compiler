@@ -1,0 +1,77 @@
+{
+  "models": {
+    "old": 2804,
+    "new": 2804,
+    "equal": true
+  },
+  "lemmas": {
+    "old": 298510,
+    "new": 298510,
+    "equal": true
+  },
+  "accents": {
+    "old": 2012,
+    "new": 2012,
+    "equal": true
+  },
+  "sessions": {
+    "old": 363,
+    "new": 364,
+    "equal": false
+  },
+  "prefixes": {
+    "old": 54,
+    "new": 54,
+    "equal": true
+  },
+  "sessions_old_is_prefix": true,
+  "old_raw_expansion": {
+    "lemmas": 298510,
+    "forms": 7040634,
+    "sha256": "f39d5c0f0b8c00aa2a473e237298031754cd49a2a4509ac7d1b0e98e59048a35"
+  },
+  "new_raw_expansion": {
+    "lemmas": 298510,
+    "forms": 7040634,
+    "sha256": "f39d5c0f0b8c00aa2a473e237298031754cd49a2a4509ac7d1b0e98e59048a35"
+  },
+  "missing_ending_codes": [
+    {
+      "model": 393,
+      "code": "ау",
+      "using_lemmas": 0
+    },
+    {
+      "model": 2305,
+      "code": "Йт",
+      "using_lemmas": 0
+    },
+    {
+      "model": 2305,
+      "code": "Йх",
+      "using_lemmas": 0
+    },
+    {
+      "model": 2779,
+      "code": "ау",
+      "using_lemmas": 0
+    }
+  ],
+  "semantic_import_status": "blocked",
+  "prefix_sets_not_expanded": 60,
+  "elapsed_seconds": 11.905185245999746,
+  "inputs": {
+    "mrd": {
+      "path": "historical.mrd",
+      "sha256": "753f3037e8c9b20534068b1c16ba3efb6a67f3bfa6b21e5efc2696de931811ab"
+    },
+    "morph": {
+      "path": "historical.json",
+      "sha256": "d40bbb7972df54efd4be3239d7bb6edff4edc5f282f22fefb45abe9122bac0a4"
+    },
+    "gram": {
+      "path": "historical-gramtab.json",
+      "sha256": "2354a9f65e59de11bc22a580e0cd6ae82ca3d1bcfd06eaab06c0e48fe06b82a3"
+    }
+  }
+}

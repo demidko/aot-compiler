@@ -1,0 +1,10 @@
+first_lookup_ms=1257.264 allocated=626294456 retained=330706320 sum_pool_peaks=451987040 count=5 class=file:/workspace/aot/build/libs/aot.jar resource=jar:file:/workspace/aot/build/libs/aot.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=508528
+first_lookup_ms=1146.306 allocated=626294456 retained=330729072 sum_pool_peaks=456705632 count=5 class=file:/workspace/aot/build/libs/aot.jar resource=jar:file:/workspace/aot/build/libs/aot.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=509960
+first_lookup_ms=1137.619 allocated=626294456 retained=330700624 sum_pool_peaks=451987040 count=5 class=file:/workspace/aot/build/libs/aot.jar resource=jar:file:/workspace/aot/build/libs/aot.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=508476
+first_lookup_ms=1157.609 allocated=626294456 retained=330712528 sum_pool_peaks=455132768 count=5 class=file:/workspace/aot/build/libs/aot.jar resource=jar:file:/workspace/aot/build/libs/aot.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=510644
+first_lookup_ms=1114.121 allocated=626294456 retained=330744728 sum_pool_peaks=453559904 count=5 class=file:/workspace/aot/build/libs/aot.jar resource=jar:file:/workspace/aot/build/libs/aot.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=508668

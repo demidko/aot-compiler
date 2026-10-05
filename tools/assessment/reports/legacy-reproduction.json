@@ -1,0 +1,24 @@
+{
+  "compared_lemmas": 174628,
+  "different_ordered_paradigms": 0,
+  "binary_digest": {
+    "lemmas": 174628,
+    "forms": 5017012,
+    "sha256": "f19bdbb0e498254e93ebcf306daf20229c23e5fc3f8382e99ead7dffe6fcd104"
+  },
+  "elapsed_seconds": 28.978117771001052,
+  "inputs": {
+    "mrd": {
+      "path": "mrd",
+      "sha256": "8e7499d2d9aa29959f3307268bf5012a9db23abc226a743fc65b91583c5e9f50"
+    },
+    "tab": {
+      "path": "tab",
+      "sha256": "f0c938917675cab2c773b2ecc458da343d7f0af2f49e23450b69342c2ada5946"
+    },
+    "binary": {
+      "path": "mrd.gz",
+      "sha256": "7bc652a568090d6f07e9d53213329769e4d1597a5688d9c77e422b63b5c5fc41"
+    }
+  }
+}
