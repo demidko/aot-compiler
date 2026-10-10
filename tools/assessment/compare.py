@@ -30,9 +30,17 @@ def historical(args):
             yield [(e.prefix+l.stem+e.suffix,(e.code,l.common)) for e in source.models[l.model]]
     report['old_raw_expansion']=digest(raw_expansion(a))
     report['new_raw_expansion']=digest(raw_expansion(b))
-    used=collections.Counter(l.model for l in a.lemmas)
-    report['missing_ending_codes']=[dict(model=i,code=e.code,using_lemmas=used[i]) for i,m in enumerate(a.models) for e in m if e.code not in tags]
-    report['semantic_import_status']='blocked' if report['missing_ending_codes'] else 'validated'
+    def missing_codes(source):
+        used=collections.Counter(l.model for l in source.lemmas)
+        common=collections.Counter(l.common for l in source.lemmas if l.common)
+        # Match expand's strict code checks, including unused models and meta entries.
+        return dict(
+            missing_ending_codes=[dict(model=i,code=e.code,using_lemmas=used[i]) for i,m in enumerate(source.models) for e in m if e.code not in tags],
+            missing_common_codes=[dict(code=code,using_lemmas=count) for code,count in sorted(common.items()) if code not in tags])
+    report['semantic_validation']={name:missing_codes(source) for name,source in (('old',a),('new',b))}
+    # Preserve the original MRD-only field for existing report consumers.
+    report['missing_ending_codes']=report['semantic_validation']['old']['missing_ending_codes']
+    report['semantic_import_status']='blocked' if any(codes for source in report['semantic_validation'].values() for codes in source.values()) else 'validated'
     report['prefix_sets_not_expanded']=sum(l.prefix_set is not None for l in a.lemmas)
     return report
 

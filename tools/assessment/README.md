@@ -161,6 +161,15 @@ on the task machine; this is tool execution time, not an analyzer benchmark.
 Reports intentionally separate order-sensitive paradigms, semantic multisets,
 and positional-ID reuse. Dictionaries and generated databases stay local.
 
+The historical report checks ending and nonempty common codes in both the old
+MRD and new JSON against the supplied grammar table, including unused models
+and meta entries. `semantic_validation.old` and `.new` list missing ending codes
+by model and missing common codes with lemma counts. The legacy top-level
+`missing_ending_codes` remains the old MRD list. `semantic_import_status` is
+`blocked` if either source has missing codes; `validated` means code resolution
+passed, not semantic equivalence or support for prefix-set expansion. Raw
+expansion digests remain available even when semantic validation is blocked.
+
 Next: review the measured tradeoffs and choose explicit compatibility policies.
 The writer and measurements preserve the compact index and primitive ID code.
 See MEASUREMENTS.md for absolute resource growth and remaining gates.
