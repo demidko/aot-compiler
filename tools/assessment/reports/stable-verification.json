@@ -1,0 +1,16 @@
+{
+  "retain-legacy": {
+    "unchanged_old_paradigms": 174628,
+    "empty_old_slots": 0,
+    "changed_nonempty_old_slots": 0,
+    "slots": 312191,
+    "forms": 7297470
+  },
+  "tombstone": {
+    "unchanged_old_paradigms": 160790,
+    "empty_old_slots": 13838,
+    "changed_nonempty_old_slots": 0,
+    "slots": 312191,
+    "forms": 7036268
+  }
+}

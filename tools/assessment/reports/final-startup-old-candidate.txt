@@ -1,0 +1,10 @@
+first_lookup_ms=1093.495 allocated=499471160 retained=330649584 sum_pool_peaks=466667104 count=5 class=file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar resource=jar:file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=518612
+first_lookup_ms=1082.790 allocated=499471160 retained=330646992 sum_pool_peaks=466667104 count=5 class=file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar resource=jar:file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=520264
+first_lookup_ms=1199.280 allocated=499471160 retained=330640632 sum_pool_peaks=466667104 count=5 class=file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar resource=jar:file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=518892
+first_lookup_ms=1087.013 allocated=499471160 retained=330629240 sum_pool_peaks=466142816 count=5 class=file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar resource=jar:file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=520936
+first_lookup_ms=1124.839 allocated=499471160 retained=330639352 sum_pool_peaks=465618528 count=5 class=file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar resource=jar:file:/workspace/aot-startup-profile/build/libs/aot-startup-profile.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=520928

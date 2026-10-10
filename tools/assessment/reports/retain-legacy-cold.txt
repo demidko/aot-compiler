@@ -1,0 +1,6 @@
+first_lookup_ms=1525.835 allocated=864009232 retained=467498536 sum_pool_peaks=632866400 count=5 class=file:/workspace/morph-assessment-data/retain-legacy.jar resource=jar:file:/workspace/morph-assessment-data/retain-legacy.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=742328
+first_lookup_ms=1713.333 allocated=864009232 retained=467607704 sum_pool_peaks=643876448 count=5 class=file:/workspace/morph-assessment-data/retain-legacy.jar resource=jar:file:/workspace/morph-assessment-data/retain-legacy.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=704452
+first_lookup_ms=1494.115 allocated=864009232 retained=467527936 sum_pool_peaks=644925024 count=5 class=file:/workspace/morph-assessment-data/retain-legacy.jar resource=jar:file:/workspace/morph-assessment-data/retain-legacy.jar!/mrd.gz java=21.0.12.1 maxheap=1073741824 gc=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+max_rss_kib=705552

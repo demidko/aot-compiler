@@ -1,0 +1,90 @@
+{
+  "buffer-old-scratch": {
+    "first_lookup_ms": {
+      "median": 1214.168,
+      "min": 1116.44,
+      "max": 1344.212
+    },
+    "allocated": {
+      "median": 499403904.0,
+      "min": 499403904.0,
+      "max": 499403904.0
+    },
+    "retained": {
+      "median": 330636016.0,
+      "min": 330590104.0,
+      "max": 330652152.0
+    },
+    "max_rss_kib": {
+      "median": 518772.0,
+      "min": 516636.0,
+      "max": 519264.0
+    }
+  },
+  "buffer-old-buffer": {
+    "first_lookup_ms": {
+      "median": 1094.827,
+      "min": 1064.637,
+      "max": 1192.593
+    },
+    "allocated": {
+      "median": 499469088.0,
+      "min": 499469088.0,
+      "max": 499469088.0
+    },
+    "retained": {
+      "median": 330608264.0,
+      "min": 330586992.0,
+      "max": 330669624.0
+    },
+    "max_rss_kib": {
+      "median": 520936.0,
+      "min": 518772.0,
+      "max": 521184.0
+    }
+  },
+  "buffer-new-scratch": {
+    "first_lookup_ms": {
+      "median": 1520.892,
+      "min": 1488.853,
+      "max": 1612.581
+    },
+    "allocated": {
+      "median": 691630200.0,
+      "min": 691630200.0,
+      "max": 691630200.0
+    },
+    "retained": {
+      "median": 464954432.0,
+      "min": 464903432.0,
+      "max": 464999496.0
+    },
+    "max_rss_kib": {
+      "median": 692832.0,
+      "min": 691080.0,
+      "max": 693640.0
+    }
+  },
+  "buffer-new-buffer": {
+    "first_lookup_ms": {
+      "median": 1445.184,
+      "min": 1372.615,
+      "max": 1516.138
+    },
+    "allocated": {
+      "median": 691695176.0,
+      "min": 691695176.0,
+      "max": 691695176.0
+    },
+    "retained": {
+      "median": 464968176.0,
+      "min": 464911016.0,
+      "max": 465019304.0
+    },
+    "max_rss_kib": {
+      "median": 695072.0,
+      "min": 694992.0,
+      "max": 695936.0
+    }
+  }
+}

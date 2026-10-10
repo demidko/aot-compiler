@@ -1,0 +1,90 @@
+{
+  "old-base": {
+    "first_lookup_ms": {
+      "median": 1146.306,
+      "min": 1114.121,
+      "max": 1257.264
+    },
+    "allocated": {
+      "median": 626294456.0,
+      "min": 626294456.0,
+      "max": 626294456.0
+    },
+    "retained": {
+      "median": 330712528.0,
+      "min": 330700624.0,
+      "max": 330744728.0
+    },
+    "max_rss_kib": {
+      "median": 508668.0,
+      "min": 508476.0,
+      "max": 510644.0
+    }
+  },
+  "old-candidate": {
+    "first_lookup_ms": {
+      "median": 1093.495,
+      "min": 1082.79,
+      "max": 1199.28
+    },
+    "allocated": {
+      "median": 499471160.0,
+      "min": 499471160.0,
+      "max": 499471160.0
+    },
+    "retained": {
+      "median": 330640632.0,
+      "min": 330629240.0,
+      "max": 330649584.0
+    },
+    "max_rss_kib": {
+      "median": 520264.0,
+      "min": 518612.0,
+      "max": 520936.0
+    }
+  },
+  "new-base": {
+    "first_lookup_ms": {
+      "median": 1511.341,
+      "min": 1484.794,
+      "max": 1633.494
+    },
+    "allocated": {
+      "median": 858167712.0,
+      "min": 858167712.0,
+      "max": 858167712.0
+    },
+    "retained": {
+      "median": 464942936.0,
+      "min": 464892520.0,
+      "max": 464949648.0
+    },
+    "max_rss_kib": {
+      "median": 734144.0,
+      "min": 731948.0,
+      "max": 735936.0
+    }
+  },
+  "new-candidate": {
+    "first_lookup_ms": {
+      "median": 1415.056,
+      "min": 1382.189,
+      "max": 1489.051
+    },
+    "allocated": {
+      "median": 691697248.0,
+      "min": 691697248.0,
+      "max": 691697248.0
+    },
+    "retained": {
+      "median": 464950984.0,
+      "min": 464917712.0,
+      "max": 464980480.0
+    },
+    "max_rss_kib": {
+      "median": 695684.0,
+      "min": 693636.0,
+      "max": 696220.0
+    }
+  }
+}

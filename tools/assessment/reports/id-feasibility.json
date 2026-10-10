@@ -1,0 +1,11 @@
+{
+  "unique_exact_ordered_paradigms": 160790,
+  "preservable_ids_in_exact_ordered_paradigms": 4755810,
+  "old_paradigms_no_semantic_match": 13759,
+  "old_paradigms_no_lemma_spelling": 7,
+  "unresolved_old_slots": 13838,
+  "new_records_to_append": 137563,
+  "total_slots_if_preserving_all_old_slots": 312191,
+  "retired_old_ids": 261202,
+  "retention_forms_total": 7297470
+}

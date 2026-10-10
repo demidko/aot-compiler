@@ -1,0 +1,43 @@
+{
+  "timeline": [
+    {
+      "stage": "initial",
+      "file": "initial-upstream.mrd",
+      "sha256": "3ae98a1eec5f5299343301f3526737cd8a08a93d919e7494332ac923fdb330d8",
+      "lost_from_published_present": 4,
+      "removed_since_previous": 4237
+    },
+    {
+      "stage": "pre-think",
+      "file": "pre-think.mrd",
+      "sha256": "c553a513eb04aa5f5314f16539fc6f78a754047df858b719a1e06d2bc877b95f",
+      "lost_from_published_present": 3,
+      "removed_since_previous": 1
+    },
+    {
+      "stage": "post-think",
+      "file": "post-think.mrd",
+      "sha256": "9271f4e96bdfbafec0f3232c5f60a8c64cc930dfcd49e9276df9cea33021d914",
+      "lost_from_published_present": 3,
+      "removed_since_previous": 0
+    },
+    {
+      "stage": "pre-json",
+      "file": "historical.mrd",
+      "sha256": "753f3037e8c9b20534068b1c16ba3efb6a67f3bfa6b21e5efc2696de931811ab",
+      "lost_from_published_present": 0,
+      "removed_since_previous": 3
+    },
+    {
+      "stage": "post-pack",
+      "file": "post-pack.json",
+      "sha256": "88bdc79d28e794b76d79c8b5381701e41677f7cd4d90f8e4309d64cda1511a91",
+      "lost_from_published_present": 0,
+      "removed_since_previous": 0
+    }
+  ],
+  "categories": {
+    "contracted_-ьи": 4079,
+    "other_lost_surfaces": 162
+  }
+}
